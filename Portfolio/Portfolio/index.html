@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Khushi Kumari — Aspiring Software Developer & B.Tech CSE student passionate about frontend web development, software engineering, and creative problem solving.">
+    <meta name="keywords" content="Khushi Kumari, Software Developer, Frontend Developer, Web Development, B.Tech CSE, SVIET Chandigarh, Portfolio">
+    <meta name="author" content="Khushi Kumari">
+    <meta name="theme-color" content="#fbfbfe">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Khushi Kumari | Aspiring Software Developer & Portfolio">
+    <meta property="og:description" content="Explore projects, skills, education, and technical journey of Khushi Kumari.">
+    <meta property="og:image" content="photo.jpeg">
+
+    <title>Khushi Kumari | Aspiring Software Developer</title>
+
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Crisp Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%237c3aed'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='42' font-weight='800' fill='%23ffffff'>KK</text></svg>">
+</head>
+
+<body>
+    <!-- Reading Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+    <!-- Interactive Mouse Spotlight Glow (Responds to cursor movement) -->
+    <div class="interactive-mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+    <!-- Soft Animated Pastel Background Orbs (Lavender, Sky-Blue, Blush Pink, Soft Violet) -->
+    <div class="pastel-orb orb-lavender" aria-hidden="true"></div>
+    <div class="pastel-orb orb-sky" aria-hidden="true"></div>
+    <div class="pastel-orb orb-pink" aria-hidden="true"></div>
+    <div class="pastel-orb orb-violet" aria-hidden="true"></div>
+
+    <!-- Subtle Tech Dotted Geometric Grid Background Pattern -->
+    <div class="bg-dotted-grid" aria-hidden="true"></div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header" id="header">
+        <nav class="navbar" aria-label="Main Navigation">
+            <a href="#home" class="nav-brand" aria-label="Khushi Kumari Portfolio Home">
+                <span class="brand-monogram">KK</span>
+                <span class="brand-text">Khushi<span class="brand-accent">.dev</span></span>
+            </a>
+
+            <!-- Desktop & Mobile Navigation Links -->
+            <ul class="nav-links" id="primaryNav">
+                <li><a href="#home" class="nav-item active">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#achievements" class="nav-item">Achievements</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+
+            <!-- Navbar Actions: Theme Toggle & Mobile Hamburger -->
+            <div class="nav-actions">
+                <button id="themeButton" class="theme-toggle-btn" aria-label="Switch between light and dark mode" title="Toggle theme" aria-pressed="false">
+                    <span class="theme-icon light-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </span>
+                    <span class="theme-icon dark-icon" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </span>
+                </button>
+
+                <button id="mobileMenuBtn" class="mobile-toggle-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <!-- ================= HERO SECTION ================= -->
+        <section id="home" class="hero-section">
+            <!-- Subtle Floating Particles & Abstract Decorative Shapes in Hero -->
+            <div class="hero-particles-container" aria-hidden="true">
+                <!-- Sparkle 1: Lavender Violet -->
+                <div class="hero-particle particle-sparkle-1">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                    </svg>
+                </div>
+                <!-- Sparkle 2: Sky Blue -->
+                <div class="hero-particle particle-sparkle-2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0L14.6 9.4L24 12L14.6 14.6L12 24L9.4 14.6L0 12L9.4 9.4L12 0Z"/>
+                    </svg>
+                </div>
+                <!-- Soft Pastel Ring Accent -->
+                <div class="hero-particle particle-ring-1"></div>
+                <!-- Soft Pastel Dot Accent -->
+                <div class="hero-particle particle-dot-1"></div>
+                <div class="hero-particle particle-dot-2"></div>
+            </div>
+
+            <div class="hero-container">
+                <!-- Left Column: Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-indicator"></span>
+                        <span>Open to Opportunities & Internships</span>
+                    </div>
+
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Khushi Kumari</h1>
+
+                    <h2 class="hero-headline">Aspiring Software Developer | Creative Problem Solver</h2>
+
+                    <!-- Dynamic Typewriter Subtitle -->
+                    <div class="typewriter-box" aria-live="polite">
+                        <span class="type-lead">Focusing on: </span>
+                        <span id="typing" class="typing-text"></span>
+                        <span class="typing-cursor" aria-hidden="true">|</span>
+                    </div>
+
+                    <p class="hero-description">
+                        I am a Computer Science & Engineering undergraduate at <strong>SVIET Chandigarh</strong> with a strong passion for web development, software engineering, and practical problem solving. Dedicated to creating responsive, high-performance web applications and continuously strengthening modern developer skills.
+                    </p>
+
+                    <!-- Hero Call-to-Actions -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+
+                        <a href="Khushi_Kumari_Resume_Final.pdf" download="Khushi_Kumari_Resume_Final.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download Resume</span>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Social Link Strip -->
+                    <div class="hero-socials">
+                        <span class="social-label">Connect:</span>
+                        <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/khushi-kumari-08794537b/" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+
+                        <a href="mailto:kumarikhushi08@gmail.com" class="social-chip" aria-label="Email Khushi Kumari">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Stylized Profile Photo with Pastel Aura -->
+                <div class="hero-visual">
+                    <div class="photo-glow-wrapper">
+                        <!-- Animated Pastel Gradient Aura Ring -->
+                        <div class="aura-ring" aria-hidden="true"></div>
+
+                        <!-- Image Frame -->
+                        <div class="photo-frame">
+                            <img src="photo.jpeg" alt="Khushi Kumari - Aspiring Software Developer" class="hero-photo" width="340" height="340" loading="eager">
+                        </div>
+
+                        <!-- Floating Stat Badges with Soft Pastel Glass -->
+                        <div class="floating-badge badge-top">
+                            <span class="badge-icon">🎓</span>
+                            <div class="badge-text">
+                                <span class="badge-title">B.Tech CSE</span>
+                                <span class="badge-sub">SVIET Chandigarh</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom">
+                            <span class="badge-icon">⚡</span>
+                            <div class="badge-text">
+                                <span class="badge-title">5+ Projects Built</span>
+                                <span class="badge-sub">Web & Software Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= ABOUT ME ================= -->
+        <section id="about" class="section">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">INTRODUCTION</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Academic Story & Mindset -->
+                <div class="about-card story-card reveal-on-scroll">
+                    <h3 class="card-title">
+                        <span class="title-icon">👋</span>
+                        Hello, I'm Khushi
+                    </h3>
+                    <p class="about-text">
+                        I am currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong> at <strong>Swami Vivekananda Institute of Engineering and Technology (SVIET), Chandigarh</strong>. My journey in tech is driven by curiosity, analytical thinking, and the excitement of building tangible solutions.
+                    </p>
+                    <p class="about-text">
+                        I have developed a keen interest in <strong>software development, web technologies, and problem solving</strong>. I enjoy converting concepts into structured code, crafting responsive user interfaces, and exploring emerging software paradigms.
+                    </p>
+                    <p class="about-text">
+                        <strong>My Career Goal:</strong> To build a successful career as a versatile software developer by continuously enhancing my technical capabilities, writing clean, accessible code, gaining practical industry experience, and contributing meaningfully to innovative technology initiatives.
+                    </p>
+
+                    <!-- Key Traits -->
+                    <div class="traits-container">
+                        <div class="trait-item">
+                            <span class="trait-check">✓</span>
+                            <span>Dedicated to Clean & Semantic Code</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-check">✓</span>
+                            <span>Fast & Adaptable Learner</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-check">✓</span>
+                            <span>Strong Problem-Solving Orientation</span>
+                        </div>
+                        <div class="trait-item">
+                            <span class="trait-check">✓</span>
+                            <span>Enthusiastic Team Collaborator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Snapshot & Quick Info -->
+                <div class="about-card info-card reveal-on-scroll">
+                    <h3 class="card-title">
+                        <span class="title-icon">📋</span>
+                        Academic Snapshot
+                    </h3>
+
+                    <ul class="info-list">
+                        <li class="info-row">
+                            <span class="info-label">Full Name</span>
+                            <span class="info-value">Khushi Kumari</span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Degree</span>
+                            <span class="info-value">B.Tech — Computer Science & Engineering</span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Institution</span>
+                            <span class="info-value">SVIET, Chandigarh</span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Status</span>
+                            <span class="info-value"><span class="status-chip">Currently Pursuing</span></span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Core Interests</span>
+                            <span class="info-value">Web Development, Software Engineering, AI/CV</span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Languages</span>
+                            <span class="info-value">English, Hindi</span>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">India</span>
+                        </li>
+                    </ul>
+
+                    <!-- Quick Download CTA inside card -->
+                    <div class="card-action">
+                        <a href="Khushi_Kumari_Resume_Final.pdf" download="Khushi_Kumari_Resume_Final.pdf" class="btn btn-secondary btn-full">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download Full Resume (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section id="skills" class="section">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">MY TECHNICAL TOOLKIT</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">
+                    Honest overview of my current technical proficiencies, tools, and ongoing learning journey.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Group 1: Frontend Web Development -->
+                <div class="skill-category-card reveal-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Frontend Web Development</h3>
+                            <span class="category-status">Core Focus & Daily Practice</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-container">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">HTML5</span>
+                                </div>
+                                <span class="skill-level-badge level-proficient">Proficient</span>
+                            </div>
+                            <p class="skill-desc">Semantic page structuring, forms, accessible markup, and modern SEO foundations.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">CSS3</span>
+                                </div>
+                                <span class="skill-level-badge level-proficient">Proficient</span>
+                            </div>
+                            <p class="skill-desc">Responsive layouts (Flexbox & Grid), Glassmorphism styling, animations, and custom theme variables.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                </div>
+                                <span class="skill-level-badge level-intermediate">Intermediate</span>
+                            </div>
+                            <p class="skill-desc">DOM manipulation, event handling, LocalStorage, modal controls, and dynamic interactivity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 2: Core Programming Languages -->
+                <div class="skill-category-card reveal-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Core Programming Languages</h3>
+                            <span class="category-status">Academic & Logic Foundations</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-container">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Java</span>
+                                </div>
+                                <span class="skill-level-badge level-intermediate">Intermediate</span>
+                            </div>
+                            <p class="skill-desc">Core Java, Object-Oriented Programming (OOP), encapsulation, inheritance, and logic building.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Python</span>
+                                </div>
+                                <span class="skill-level-badge level-intermediate">Intermediate</span>
+                            </div>
+                            <p class="skill-desc">Scripting, algorithmic problem solving, data structures, and computer vision integration.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">C Language</span>
+                                </div>
+                                <span class="skill-level-badge level-learning">Foundational</span>
+                            </div>
+                            <p class="skill-desc">Understanding low-level programming basics, memory structures, syntax, and algorithmic logic.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 3: Developer Tools & Version Control -->
+                <div class="skill-category-card reveal-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Tools & Development Workflow</h3>
+                            <span class="category-status">Productivity & Collaboration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-container">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Git & GitHub</span>
+                                </div>
+                                <span class="skill-level-badge level-intermediate">Working Knowledge</span>
+                            </div>
+                            <p class="skill-desc">Repository management, commit workflows, version tracking, and code publication.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">VS Code & Live Server</span>
+                                </div>
+                                <span class="skill-level-badge level-proficient">Proficient</span>
+                            </div>
+                            <p class="skill-desc">Efficient code editing, rapid hot-reloading testing, extensions, and debugging.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Browser DevTools</span>
+                                </div>
+                                <span class="skill-level-badge level-proficient">Proficient</span>
+                            </div>
+                            <p class="skill-desc">Inspecting elements, testing responsive viewports, console debugging, and performance checking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group 4: Domains & Exploration -->
+                <div class="skill-category-card reveal-on-scroll">
+                    <div class="category-header">
+                        <div class="category-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="category-title">Applied Concepts & Exploration</h3>
+                            <span class="category-status">Specialized Interests</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-items-container">
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Computer Vision (OpenCV)</span>
+                                </div>
+                                <span class="skill-level-badge level-learning">Active Project</span>
+                            </div>
+                            <p class="skill-desc">Video stream capturing, Haar cascade models, and real-time facial feature bounding boxes.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Problem Solving</span>
+                                </div>
+                                <span class="skill-level-badge level-intermediate">Practicing</span>
+                            </div>
+                            <p class="skill-desc">Translating real-world operational problems into efficient algorithmic steps and logic.</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-meta">
+                                <div class="skill-name-box">
+                                    <span class="skill-bullet"></span>
+                                    <span class="skill-name">Responsive Web Design</span>
+                                </div>
+                                <span class="skill-level-badge level-proficient">Proficient</span>
+                            </div>
+                            <p class="skill-desc">Mobile-first design principles, cross-browser compatibility, and accessible interactions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= EDUCATION & ACHIEVEMENTS ================= -->
+        <section id="education" class="section">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">ACADEMIC PATHWAY</span>
+                <h2 class="section-title">Education & Milestones</h2>
+                <div class="title-bar"></div>
+            </div>
+
+            <div class="education-achievements-grid">
+                <!-- Left: Education Timeline -->
+                <div class="timeline-column reveal-on-scroll">
+                    <h3 class="column-heading">
+                        <span class="heading-icon">🎓</span>
+                        Academic Background
+                    </h3>
+
+                    <div class="timeline-wrapper">
+                        <!-- Education Card 1: B.Tech -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="marker-dot"></span>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-top-row">
+                                    <span class="timeline-tag">CURRENTLY PURSUING</span>
+                                    <span class="timeline-badge">Undergraduate</span>
+                                </div>
+                                <h4 class="timeline-title">B.Tech — Computer Science & Engineering</h4>
+                                <p class="timeline-institution">
+                                    <strong>Swami Vivekananda Institute of Engineering and Technology (SVIET)</strong>, Chandigarh
+                                </p>
+                                <p class="timeline-desc">
+                                    Building comprehensive technical skills in programming languages, object-oriented software engineering, web application development, algorithms, and practical project implementation.
+                                </p>
+                                <div class="timeline-highlights">
+                                    <span class="tech-chip">Data Structures</span>
+                                    <span class="tech-chip">OOP with Java</span>
+                                    <span class="tech-chip">Python</span>
+                                    <span class="tech-chip">Web Development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education Card 2: Higher Secondary -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <span class="marker-dot"></span>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-top-row">
+                                    <span class="timeline-tag">COMPLETED</span>
+                                    <span class="timeline-badge">Academic Schooling</span>
+                                </div>
+                                <h4 class="timeline-title">Higher Secondary Education (12th Grade)</h4>
+                                <p class="timeline-institution">
+                                    Senior Secondary School Education
+                                </p>
+                                <p class="timeline-desc">
+                                    Completed higher secondary education with a rigorous foundation in Mathematics, Physics, and Chemistry, cultivating structured problem solving and analytical thinking.
+                                </p>
+                                <div class="timeline-highlights">
+                                    <span class="tech-chip">Mathematics</span>
+                                    <span class="tech-chip">Science Stream</span>
+                                    <span class="tech-chip">Analytical Thinking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Verified Academic Activities & Practical Milestones -->
+                <div class="achievements-column reveal-on-scroll" id="achievements">
+                    <h3 class="column-heading">
+                        <span class="heading-icon">🏆</span>
+                        Activities & Learning Milestones
+                    </h3>
+
+                    <div class="achievements-container">
+                        <div class="achievement-card">
+                            <div class="achievement-icon">💻</div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Hands-On Practical Project Implementation</h4>
+                                <p class="achievement-desc">
+                                    Designed and developed multiple functional software and web applications from scratch, including TripMate, LandPulse AI concept, and OpenCV-based computer vision face detection.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🔬</div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Computer Vision & AI Exploration</h4>
+                                <p class="achievement-desc">
+                                    Successfully built and deployed an OpenCV face-tracking system with real-time camera stream processing and multi-face bounding box localization.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">🤝</div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Active Collegiate Learning & Workshops</h4>
+                                <p class="achievement-desc">
+                                    Engaging in department technical seminars, coding challenges, and collaborative campus development sessions at SVIET Chandigarh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card">
+                            <div class="achievement-icon">📦</div>
+                            <div class="achievement-content">
+                                <h4 class="achievement-title">Open-Source & Version Control Practices</h4>
+                                <p class="achievement-desc">
+                                    Active GitHub repository management with clean commit histories, well-documented project readmes, and responsive UI principles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECT SHOWCASE ================= -->
+        <section id="projects" class="section">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">FEATURED WORK</span>
+                <h2 class="section-title">Projects Showcase</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">
+                    Explore my featured web applications, data tools, and software projects. Filter by category or click "View Details" for comprehensive deep-dives.
+                </p>
+            </div>
+
+            <!-- Project Filter Controls -->
+            <div class="project-filters reveal-on-scroll" role="tablist" aria-label="Project Categories">
+                <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                    All Projects (<span id="allCount">5</span>)
+                </button>
+                <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">
+                    Web Development
+                </button>
+                <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">
+                    JavaScript
+                </button>
+                <button class="filter-btn" data-filter="python-ai" role="tab" aria-selected="false">
+                    Python / AI
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1: TripMate -->
+                <article class="project-card reveal-on-scroll" data-category="web javascript">
+                    <div class="project-banner banner-tripmate">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-badge">Travel Tech</div>
+                        <div class="banner-icon-art">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.3c.4-.2.6-.6.5-1.1z"/>
+                            </svg>
+                        </div>
+                        <span class="project-num-tag">#01</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-category-label">Web Application • Travel Tech</div>
+                        <h3 class="project-title">TripMate — Travel Planner</h3>
+
+                        <div class="problem-solved-box">
+                            <strong>Problem Solved:</strong> Eliminates scattered itineraries, chaotic budget tracking, and lost packing lists by unifying all travel essentials into an intuitive, responsive dashboard.
+                        </div>
+
+                        <p class="project-desc">
+                            An interactive web planner designed to organize destinations, day-by-day itineraries, travel budgets, and packing checklists with persistent local storage.
+                        </p>
+
+                        <div class="tech-badge-container">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">LocalStorage</span>
+                        </div>
+
+                        <div class="project-features-list">
+                            <span>✓ Dynamic itinerary schedule builder</span>
+                            <span>✓ Real-time expense & budget calculator</span>
+                            <span>✓ Interactive packing checklist with progress tracking</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="project-btn-group">
+                                <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="btn-card btn-code" title="View Source Code on GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+
+                                <button type="button" class="btn-card btn-demo-action" data-project="tripmate" title="Preview Demo Details">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Live Preview</span>
+                                </button>
+                            </div>
+
+                            <button type="button" class="btn-details-trigger" data-project="tripmate" aria-haspopup="dialog">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: LandPulse AI -->
+                <article class="project-card reveal-on-scroll" data-category="python-ai web">
+                    <div class="project-banner banner-landpulse">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-badge">Analytics & AI</div>
+                        <div class="banner-icon-art">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 3v18h18"/>
+                                <path d="m19 9-5 5-4-4-3 3"/>
+                                <circle cx="19" cy="9" r="2"/>
+                            </svg>
+                        </div>
+                        <span class="project-num-tag">#02</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-category-label">Predictive Dashboard • Data & Python</div>
+                        <h3 class="project-title">LandPulse AI — Predictive Analytics</h3>
+
+                        <div class="problem-solved-box">
+                            <strong>Problem Solved:</strong> Bridges the gap between raw agricultural/environmental parameters and actionable land valuation trends through interactive visual forecasting.
+                        </div>
+
+                        <p class="project-desc">
+                            A predictive analytics dashboard concept for exploring land metrics, environmental factors, soil health indicators, and predictive valuation trends.
+                        </p>
+
+                        <div class="tech-badge-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Data Analysis</span>
+                            <span class="tech-badge">Predictive Concepts</span>
+                            <span class="tech-badge">CSS3/HTML5 UI</span>
+                        </div>
+
+                        <div class="project-features-list">
+                            <span>✓ Multi-parameter land indicator metrics</span>
+                            <span>✓ Predictive valuation trend forecasting</span>
+                            <span>✓ Interactive data filtering & statistical summary cards</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="project-btn-group">
+                                <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="btn-card btn-code" title="View Source Code on GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+
+                                <button type="button" class="btn-card btn-demo-action" data-project="landpulse" title="Preview Demo Details">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Live Preview</span>
+                                </button>
+                            </div>
+
+                            <button type="button" class="btn-details-trigger" data-project="landpulse" aria-haspopup="dialog">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Personal Portfolio Website -->
+                <article class="project-card reveal-on-scroll" data-category="web javascript">
+                    <div class="project-banner banner-portfolio">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-badge">Production Showcase</div>
+                        <div class="banner-icon-art">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                        </div>
+                        <span class="project-num-tag">#03</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-category-label">Frontend Engineering • Modern Web</div>
+                        <h3 class="project-title">Personal Developer Portfolio</h3>
+
+                        <div class="problem-solved-box">
+                            <strong>Problem Solved:</strong> Provides recruiters and technical interviewers with a rapid, high-impact overview of technical capabilities, projects, and verified credentials.
+                        </div>
+
+                        <p class="project-desc">
+                            A modern, interactive developer portfolio featuring responsive glassmorphism, pastel light themes, accessible native modal dialogs, and smooth interactive animations.
+                        </p>
+
+                        <div class="tech-badge-container">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3 Custom Vars</span>
+                            <span class="tech-badge">Vanilla JS</span>
+                            <span class="tech-badge">Dialog API</span>
+                        </div>
+
+                        <div class="project-features-list">
+                            <span>✓ Ethereal light theme with mouse-interactive glowing spotlight</span>
+                            <span>✓ Native accessible dialog modals with light-dismiss</span>
+                            <span>✓ Category filtering, typewriter effects & scroll observer</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="project-btn-group">
+                                <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="btn-card btn-code" title="View Source Code on GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+
+                                <a href="#home" class="btn-card btn-live" title="View Current Live Site">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15 3 21 3 21 9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    <span>Current</span>
+                                </a>
+                            </div>
+
+                            <button type="button" class="btn-details-trigger" data-project="portfolio" aria-haspopup="dialog">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Face Detection System -->
+                <article class="project-card reveal-on-scroll" data-category="python-ai">
+                    <div class="project-banner banner-facedetection">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-badge">Computer Vision</div>
+                        <div class="banner-icon-art">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                <circle cx="12" cy="13" r="4"/>
+                            </svg>
+                        </div>
+                        <span class="project-num-tag">#04</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-category-label">Python Application • Computer Vision</div>
+                        <h3 class="project-title">Real-Time Face Detection Project</h3>
+
+                        <div class="problem-solved-box">
+                            <strong>Problem Solved:</strong> Explores real-time image processing pipelines to accurately identify human facial landmarks through live camera feeds.
+                        </div>
+
+                        <p class="project-desc">
+                            A computer vision application built with Python and OpenCV that performs real-time face detection through webcam video streams using Haar Cascade classifiers.
+                        </p>
+
+                        <div class="tech-badge-container">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Haar Cascades</span>
+                            <span class="tech-badge">Image Processing</span>
+                        </div>
+
+                        <div class="project-features-list">
+                            <span>✓ Live camera feed capture & frame parsing</span>
+                            <span>✓ Multi-face detection with real-time bounding boxes</span>
+                            <span>✓ Tuned classification thresholds for reduced false positives</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="project-btn-group">
+                                <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="btn-card btn-code" title="View Source Code on GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+
+                                <button type="button" class="btn-card btn-demo-action" data-project="facedetection" title="Preview Demo Details">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Demo Info</span>
+                                </button>
+                            </div>
+
+                            <button type="button" class="btn-details-trigger" data-project="facedetection" aria-haspopup="dialog">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: TaskFlow To-Do App -->
+                <article class="project-card reveal-on-scroll" data-category="web javascript">
+                    <div class="project-banner banner-taskflow">
+                        <div class="banner-overlay"></div>
+                        <div class="banner-badge">Utility Tool</div>
+                        <div class="banner-icon-art">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 11l3 3L22 4"/>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                            </svg>
+                        </div>
+                        <span class="project-num-tag">#05</span>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-category-label">Productivity Tool • DOM Architecture</div>
+                        <h3 class="project-title">TaskFlow — Interactive Task Manager</h3>
+
+                        <div class="problem-solved-box">
+                            <strong>Problem Solved:</strong> Streamlines daily workflow management with intuitive task organization, completion status tracking, and local data persistence.
+                        </div>
+
+                        <p class="project-desc">
+                            A responsive task management application crafted with semantic HTML, CSS, and vanilla JavaScript for organizing, filtering, and persisting daily objectives.
+                        </p>
+
+                        <div class="tech-badge-container">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">LocalStorage</span>
+                        </div>
+
+                        <div class="project-features-list">
+                            <span>✓ Real-time task creation, editing & removal</span>
+                            <span>✓ Category & completion status filtering</span>
+                            <span>✓ Auto-save persistence in browser storage</span>
+                        </div>
+
+                        <div class="project-card-footer">
+                            <div class="project-btn-group">
+                                <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="btn-card btn-code" title="View Source Code on GitHub">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                    </svg>
+                                    <span>Code</span>
+                                </a>
+
+                                <button type="button" class="btn-card btn-demo-action" data-project="taskflow" title="Preview Demo Details">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>Live Preview</span>
+                                </button>
+                            </div>
+
+                            <button type="button" class="btn-details-trigger" data-project="taskflow" aria-haspopup="dialog">
+                                <span>Details</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact" class="section">
+            <div class="section-header reveal-on-scroll">
+                <span class="section-tag">LET'S CONNECT</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-bar"></div>
+                <p class="section-subtitle">
+                    Have a project in mind, internship opportunity, or want to discuss technology? Send a message or reach out directly!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left: Contact Details Cards -->
+                <div class="contact-info-panel reveal-on-scroll">
+                    <h3 class="panel-title">Direct Contact Information</h3>
+                    <p class="panel-desc">
+                        I am actively exploring student internships, open source collaborations, and software engineering opportunities.
+                    </p>
+
+                    <div class="contact-card-list">
+                        <!-- Email Card with Copy Button -->
+                        <div class="contact-info-card">
+                            <div class="card-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <span class="card-label">Email Address</span>
+                                <a href="mailto:kumarikhushi08@gmail.com" class="card-link" id="emailAddress">kumarikhushi08@gmail.com</a>
+                            </div>
+                            <button type="button" class="copy-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard" title="Copy email">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                                <span class="copy-tooltip" id="copyTooltip">Copy</span>
+                            </button>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-info-card">
+                            <div class="card-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <span class="card-label">Phone</span>
+                                <a href="tel:+919122177490" class="card-link">+91 9122177490</a>
+                            </div>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-info-card">
+                            <div class="card-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <span class="card-label">Location</span>
+                                <span class="card-text">Chandigarh / India</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Accounts Card -->
+                        <div class="contact-info-card">
+                            <div class="card-icon-box">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx="6" cy="12" r="3"></circle>
+                                    <circle cx="18" cy="19" r="3"></circle>
+                                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                </svg>
+                            </div>
+                            <div class="card-details">
+                                <span class="card-label">Profiles</span>
+                                <div class="profile-links">
+                                    <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer" class="profile-pill">
+                                        GitHub ↗
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/khushi-kumari-08794537b/" target="_blank" rel="noopener noreferrer" class="profile-pill">
+                                        LinkedIn ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Contact Form -->
+                <div class="contact-form-panel reveal-on-scroll">
+                    <h3 class="panel-title">Send a Direct Message</h3>
+                    <p class="panel-desc">
+                        Fill out the details below. This client-side form verifies your input and generates a direct communication dispatch.
+                    </p>
+
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="senderName" class="form-label">Your Name <span class="required">*</span></label>
+                                <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required minlength="2">
+                                <span class="form-error" id="nameError" role="alert">Please provide your name (at least 2 characters).</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senderEmail" class="form-label">Your Email <span class="required">*</span></label>
+                                <input type="email" id="senderEmail" name="email" class="form-input" placeholder="name@domain.com" required>
+                                <span class="form-error" id="emailError" role="alert">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageSubject" class="form-label">Subject <span class="required">*</span></label>
+                            <input type="text" id="messageSubject" name="subject" class="form-input" placeholder="e.g. Internship Inquiry / Web Project Discussion" required minlength="3">
+                            <span class="form-error" id="subjectError" role="alert">Please provide a message subject.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageBody" class="form-label">Message <span class="required">*</span></label>
+                            <textarea id="messageBody" name="message" class="form-textarea" rows="5" placeholder="Share your message, feedback, or project opportunity..." required minlength="10"></textarea>
+                            <span class="form-error" id="messageError" role="alert">Please enter your message (at least 10 characters).</span>
+                        </div>
+
+                        <!-- Backend Configuration Notice (Honest Technical Disclosure) -->
+                        <div class="form-backend-notice">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>Client-side dispatch: Clicking submit formats your message and launches your email client pre-filled. To enable automated background submissions without an email client, configure Formspree or EmailJS in <code>script.js</code>.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+
+                        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- ================= ACCESSIBLE PROJECT DETAILS MODAL ================= -->
+    <dialog id="projectModal" class="project-modal" closedby="any" aria-labelledby="modalTitle" aria-modal="true">
+        <div class="modal-inner" id="modalInner">
+            <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal dialog" title="Close (Esc)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Dynamic Content Injected via JavaScript -->
+            <div id="modalBody" class="modal-body-container">
+                <!-- Content dynamically populated -->
+            </div>
+        </div>
+    </dialog>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="brand-monogram">KK</span>
+                        <span class="brand-text">Khushi<span class="brand-accent">.dev</span></span>
+                    </a>
+                    <p class="footer-tagline">
+                        Aspiring Software Developer & B.Tech CSE student passionate about building clean, efficient, and interactive web solutions.
+                    </p>
+                </div>
+
+                <div class="footer-links-group">
+                    <span class="footer-heading">Navigation</span>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <span class="footer-heading">Resources</span>
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="Khushi_Kumari_Resume_Final.pdf" download="Khushi_Kumari_Resume_Final.pdf">
+                                Resume (PDF) ↗
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kumarikhushi08m-glitch" target="_blank" rel="noopener noreferrer">
+                                GitHub Profile ↗
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/khushi-kumari-08794537b/" target="_blank" rel="noopener noreferrer">
+                                LinkedIn Profile ↗
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright-text">
+                    © 2026 <strong>Khushi Kumari</strong>. All Rights Reserved. Built with semantic HTML5, modern CSS3 & Vanilla JavaScript.
+                </p>
+                <div class="back-to-top-footer">
+                    <a href="#home" class="footer-top-link">Back to Top ↑</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button id="topButton" class="floating-top-btn" aria-label="Scroll back to top" title="Back to top">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- Vanilla JavaScript File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
